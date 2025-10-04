@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <script>
+        function mostrarDadosPessoaFisica() {
+            let divPessoaFisica = document.getElementById('divPessoaFisica')
+            divPessoaFisica.classList.remove("invisivel")
+            divPessoaFisica.classList.add("visivel")
+            let divPessoaJuridica = document.getElementById('divPessoaJuridica')
+            divPessoaJuridica.classList.remove("visivel")
+            divPessoaJuridica.classList.add("invisivel")            
+        }
+        function mostrarDadosPessoaJuridica() {
+            let divPessoaJuridica = document.getElementById('divPessoaJuridica')
+            divPessoaJuridica.classList.remove("invisivel")
+            divPessoaJuridica.classList.add("visivel")
+            let divPessoaFisica = document.getElementById('divPessoaFisica')
+            divPessoaFisica.classList.remove("visivel")
+            divPessoaFisica.classList.add("invisivel")                
+        }        
+    </script>
+    <style>
+        .visivel{
+            visibility: visible;
+        }
+        .invisivel{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="pessoaJuridica">PessoaJuridica :</label>
+        <input type="radio" name="tipoPessoa" id="pessoaJuridica" onclick="mostrarDadosPessoaJuridica()">
+        <label for="pessoaFisica">PessoaFisica :</label>
+        <input type="radio" name="tipoPessoa" id="pessoaFisica" onclick="mostrarDadosPessoaFisica()">
+
+        <div id="divPessoaFisica" class="invisivel">
+            <label for="cpf">CPF:</label>
+            <input type="number" name="cpf" id="cpf">
+        </div>
+        <div id="divPessoaJuridica" class="invisivel">
+            <label for="cnpj">CNPJ:</label>
+            <input type="number" name="cnpj" id="cnpj">
+        </div> 
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+        </div>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="telefone" id="telefone">
+        </div>        
+    </form>
+</body>
+
+</html>

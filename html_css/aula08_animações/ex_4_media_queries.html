@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .container {
+            background-color: red;
+            display: flex;
+            flex-direction: row;
+        }
+
+        @media (max-width:374px) {
+            .container {
+                background-color: rgb(112, 217, 231);
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div>
+        Lorem ipsum dolor sit amet.
+        </div>
+
+        <div>
+        Lorem ipsum dolor sit amet.
+        </div>
+        
+        <div>
+        Lorem ipsum dolor sit amet.
+        </div>
+    </div>    
+
+</body>
+
+</html>

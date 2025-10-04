@@ -1,0 +1,12 @@
+p{
+    font-weight: bold;
+}
+
+div{
+    background-color: rgb(170, 170, 170);
+}
+
+#horario{
+    color: red;
+    font-weight: bold;
+}

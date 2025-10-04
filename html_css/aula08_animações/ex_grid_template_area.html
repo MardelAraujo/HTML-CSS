@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid_Container</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas: 
+            'header header header header'
+            'sidebar main main main'
+            'footer footer footer footer'
+            ;
+        }
+
+        .header{
+            grid-area: header;
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+            background-color: lightblue;
+            padding: 20px;
+        }
+        .main{
+            grid-area: main;
+            background-color: lightcoral;
+            padding: 200px;
+        }
+
+        .footer{
+            grid-area: footer;
+            background-color: lightgreen;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="grid-container">
+        <div class="header">Cabeçalho</div>
+        <div class="sidebar">Barra LAteral</div>
+        <div class="main">Conteúdo Principal</div>
+        <div class="footer">Rodapé</div>
+    </div>
+    
+</body>
+</html>
